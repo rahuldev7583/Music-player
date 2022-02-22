@@ -1,5 +1,7 @@
 console.log("Welcome to Spotify");
 
+
+
 // Initialize the Variables
 let songIndex = 0;
 let audioElement = new Audio('1.mp3');
@@ -10,12 +12,12 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Warriyo - Mortals [NCS Release]", filePath: "1.mp3", coverPath: "1.jpg"},
-    {songName: "Cielo - Huma-Huma", filePath: "2.mp3", coverPath: "2.jpg"},
-    {songName: "DEAF KEV - Invincible", filePath: "3.mp3", coverPath: "3.jpg"},
-    {songName: "Cold/Mess - Prateek Kuhad", filePath: "4.mp3", coverPath: "4.jpg"},
-    {songName: "Hymn for the weekend - Coldplay", filePath: "5.mp3", coverPath: "5.jpg"},
-    {songName: "Imagine Dragons - Believer", filePath: "6.mp3", coverPath: "6.jpg"},
+    {songName: "Warriyo-Mortals", filePath: "1.mp3", coverPath: "1.jpg"},
+    {songName: "Huma-Huma", filePath: "2.mp3", coverPath: "2.jpg"},
+    {songName: "Invincible", filePath: "3.mp3", coverPath: "3.jpg"},
+    {songName: "Cold/Mess", filePath: "4.mp3", coverPath: "4.jpg"},
+    {songName: "Hymn for the...", filePath: "5.mp3", coverPath: "5.jpg"},
+    {songName: "Imagine Dragons", filePath: "6.mp3", coverPath: "6.jpg"},
     {songName: "Sage - Ritviz", filePath: "7.mp3", coverPath: "7.jpg"},
     
 ]

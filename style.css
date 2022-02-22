@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 body{
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 *{
@@ -17,16 +19,16 @@ nav ul{
     display: flex;
     align-items: center;
     list-style-type: none;
-    height: 65px;
+    height: 50px;
     background-color: black;
     color: white;
 }
-
 nav ul li{
-    padding: 0 12px;
+  font-size: 1rem;
+    padding: 0 5px;
 }
 .brand img{
-    width: 44px;
+    width: 30px;
     padding: 0 8px;
 }
 
@@ -34,7 +36,7 @@ nav ul li{
     display: flex;
     align-items: center;
     font-weight: bolder;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
 }
 
 .container{
@@ -44,7 +46,7 @@ nav ul li{
    font-family: 'Varela Round', sans-serif;
    display: flex;
    margin: 20px auto;
-   width: 70%;
+   width: 80%;
    border-radius: 12px;
    padding: 12px;
    background-image: url('bg.jpg');
@@ -97,11 +99,12 @@ nav ul li{
     margin: 0 23px;
     border-radius: 34px;
 }
-
-.timestamp{
-    margin: 0 23px;
+.songName{
+  margin-left: -1.4rem;
 }
-
+.timestamp{
+   
+}
 .timestamp i{
     cursor: pointer;
 }
@@ -109,6 +112,7 @@ nav ul li{
 .songInfo{
     position: absolute;
     left: 10vw;
+    margin: 0 auto 1.2rem auto;
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -116,9 +120,70 @@ nav ul li{
     opacity: 0;
     transition: opacity 0.4s ease-in;
 }
-
 @media only screen and (max-width: 1100px) {
     body {
       background-color: red;
+    }
+  }
+  @media only screen and (min-width: 768px){
+    nav ul{
+      height: 6rem;
+    }
+    nav ul li{
+      font-size: 2.5rem;
+      padding: 0 5rem;
+    }
+    #home{
+      margin-right: 6rem;
+    }
+/*     #nav{
+  width: 15%;
+} */
+    .brand{
+      font-size: 3rem;
+    }
+    .brand img{
+      width: 40%;
+    }
+    body{
+      background-color: lightgreen;
+    }
+    .container{
+      height: 70vh;
+      margin-top: 10%;
+      width: 80vw;
+    }
+    .songItem{
+      width: 46rem;
+      height: 8rem;
+      margin: 3.5rem 0 3.5rem 0;
+    }
+   .songItem  img{
+      width: 20%;
+      }
+      .songName{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+      }
+    .timestamp{
+      font-size: 2.5rem;
+    }
+    .bottom{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 10%;
+    }
+    .icons{
+     margin-top: 4rem;
+     font-size: 2.5rem;
+    }
+    .songInfo{
+      font-size: 3rem;
+      margin-left: 1rem;
+      margin-bottom: 3rem;
+    }
+    #gif{
+      width: 10%;
     }
   }
